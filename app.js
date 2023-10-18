@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-const express = require('express');
-const app = express();
-const port = process.env.PORT ?? 3000;
-
-app.use(express.static('public'))
-
-app.get('*', (req, res) => {
-    res.redirect('/');
-})
-
-app.listen(port, () => {
-    console.log(`App listening on port ${port}`);
-})
-=======
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -140,4 +125,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
->>>>>>> master

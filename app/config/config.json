@@ -4,17 +4,35 @@
     "password": "aK4WeuAOTDt0",
     "database": "limonp",
     "host": "ep-steep-bread-99998736.us-east-2.aws.neon.fl0.io",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true
+      }
+    }
   },
   "test": {
-    "dialect": "sqlite",
-    "storage": "./db/database.sqlite"
+    "username": "fl0user",
+    "password": "aK4WeuAOTDt0",
+    "database": "limonp",
+    "host": "ep-steep-bread-99998736.us-east-2.aws.neon.fl0.io",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true
+      }
+    }
   },
   "production": {
-    "username": "postgres",
-    "password": "123456",
+    "username": "fl0user",
+    "password": "aK4WeuAOTDt0",
     "database": "limonp",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "ep-steep-bread-99998736.us-east-2.aws.neon.fl0.io",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true
+      }
+    }
   }
 }
