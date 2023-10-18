@@ -47,7 +47,7 @@ exports.get = async function(req, res) {
     const cliente = await Cliente.findOne(
       {
         //Select nombre, apellidos, email, dni from 
-        where: {email: id},
+        where: {idCliente: id},
         attributes: ['idCliente','nombres', 'apellidos', 'telefono','direccion','email', 'dni'],
       }
     );
